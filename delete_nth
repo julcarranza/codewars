@@ -1,0 +1,22 @@
+#the one i like somebody did in codewars
+def delete_nth(order,max_e):
+    ans = []
+    for o in order:
+        if ans.count(o) < max_e: ans.append(o)
+    return ans
+    
+#the one i did
+
+def delete_nthjc(order,max_e):
+    # code here
+    pictcount = {}
+    newalbum = []
+    for picture in order:
+        
+        if picture in pictcount:
+            pictcount[picture] +=1
+        else:
+            pictcount[picture] =1
+        if pictcount[picture] <= max_e:
+            newalbum.append(picture)
+    return newalbum
