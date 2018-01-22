@@ -1,4 +1,4 @@
-ef b2d(a):
+def b2d(a):
     d = 0
     for  i, b in enumerate(a): d += int(b)*(-2)**i
     return d
