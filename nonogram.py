@@ -1,7 +1,7 @@
 import re
 class Nonogram:
     def __init__(self, clues):
-        print (clues)
+
         self.cc = clues[0]
         self.cr = clues[1]
         self.lc, self.lr = len(clues[1]), len(clues[0]);
